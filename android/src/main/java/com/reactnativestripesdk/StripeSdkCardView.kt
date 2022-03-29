@@ -256,6 +256,7 @@ class StripeSdkCardView(private val context: ThemedReactContext) : FrameLayout(c
       override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
       override fun afterTextChanged(p0: Editable?) {}
       override fun onTextChanged(var1: CharSequence?, var2: Int, var3: Int, var4: Int) {
+        cardDetails["cvc"] = var1.toString().replace(" ", "")
         onCardChanged()
       }
     })
