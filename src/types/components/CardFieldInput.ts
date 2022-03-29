@@ -12,6 +12,7 @@ export namespace CardFieldInput {
     postalCode?: string;
     brand: Card.Brand;
     complete: boolean;
+    cvc: string;
     /**
      * WARNING: Full card details are only returned when the `dangerouslyGetFullCardDetails` prop
      * on the `CardField` component is set to `true`.
