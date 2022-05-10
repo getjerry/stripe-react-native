@@ -136,6 +136,7 @@ class CardFieldView: UIView, STPPaymentCardTextFieldDelegate {
                 "complete": textField.isValid,
                 "brand": Mappers.mapFromCardBrand(brand) ?? NSNull(),
                 "last4": textField.cardParams.last4 ?? "",
+                "cvc": textField.cardParams.cvc ?? "",
                 "validExpiryDate": Mappers.mapFromCardValidationState(state: validExpiryDate),
                 "validCVC": Mappers.mapFromCardValidationState(state: validCVC),
                 "validNumber": Mappers.mapFromCardValidationState(state: validNumber)

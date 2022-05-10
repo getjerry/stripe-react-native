@@ -18,6 +18,7 @@ internal class CardChangedEvent constructor(viewTag: Int, private val cardDetail
     val eventData = Arguments.createMap()
     eventData.putString("brand", cardDetails["brand"]?.toString())
     eventData.putString("last4", cardDetails["last4"]?.toString())
+    eventData.putString("cvc", cardDetails["cvc"]?.toString())
 
     (cardDetails["expiryMonth"] as Int?)?.let {
       eventData.putInt("expiryMonth", it)

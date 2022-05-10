@@ -90,6 +90,7 @@ export const CardField = forwardRef<CardFieldInput.Methods, Props>(
           expiryYear: card.expiryYear,
           complete: card.complete,
           brand: card.brand,
+          cvc: card.cvc,
           validExpiryDate: card.validExpiryDate,
           validNumber: card.validNumber,
           validCVC: card.validCVC,
