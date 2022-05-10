@@ -15,6 +15,7 @@ export interface Details {
   expiryMonth: number;
   expiryYear: number;
   postalCode?: string;
+  cvc: string;
   brand: CardBrand;
   complete: boolean;
   validExpiryDate: ValidationState;
